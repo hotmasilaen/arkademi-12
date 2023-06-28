@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arkademi | Kursus Online</title>
+    <style>
+        .d-flex{
+            display: flex;
+        }
+        .items-center{
+            align-items: center;
+        }
+        .text-blue{
+            color: #006cbb;
+        }
+        .desc{
+            margin-left: 20px;
+        }
+        button{
+            background: linear-gradient(261.28deg,#ff9417 18.17%,#ff8017 84.69%);
+            border-radius: 0.429vw;
+            border: none;
+            outline: none;
+            min-width: 24.285vw;
+            height: 3.932vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.701vw;
+            font-family: Montserrat;
+            font-weight: 800;
+            font-size: 1.097vw;
+            line-height: 1.357vw;
+            letter-spacing: .013vw;
+            color: #fff;
+            margin-top: 3rem;
+        }
+        .box-container{
+            display: flex;
+            gap: 20px;
+            justify-content: space-between;
+            margin: 0 5rem;
+            margin-top: 3rem;
+        }
+        .card{
+            border: 1px solid gray;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .card-2{
+            border: 1px solid gray;
+            padding: 20px;
+        }
+        .card-2:hover{
+            border: 2px solid #006cbb;
+        }
+        .container{
+            margin: 0 4rem;
+        }
+        h2{
+            text-align: center;
+        }
+        @media only screen and (max-width: 600px) {
+            .d-flex{
+                flex-direction: column;
+                width: 100%;
+            }
+            .box-container{
+                flex-direction: column;
+                margin: 0;
+                width: 100%;
+            } 
+            .img-hero{
+                display: none;
+            }     
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="d-flex container">
+        <div>
+            <h1>
+                Kursus Online dari<br/>
+                Lembaga Pelatihan Resmi untuk<br/>
+                <span class="text-blue">Tingkatkan Karier Profesionalmu</span>
+            </h1>
+            <h4>
+                Lebih dari 500 kursus online dengan sertifikasi resmi untuk para pekerja dan profesional Indonesia dalam meningkatkan karier dan keahlian. Disusun dan diajarkan oleh instruktur ahli berpengalaman dengan pengakuan industri dan lisensi profesi.
+            </h4>
+            <div class="d-flex items-center">
+                <img src="./icon-pendidikan.png" width="35" height="35" />
+                <p class="desc">
+                    Arkademi adalah <b>lembaga kursus dan pendidikan resmi berlisensi</b> dari Kementrian Pendidikan, Kebudayaan, Riset, dan Teknologi RI
+                </p>
+            </div>
+            <button>Lihat yang Sesuai untuk Kariermu</button>
+        </div>
+        <div>
+            <img class="img-hero" src="./image-new-hero-comp.c0ee2441.png" width="400" height="300" />
+        </div>
+    </div>
+    <div class="box-container">
+        <div class="card">
+            <img src="./icon-pendidikan.png" width="30" height="30" />
+            <p>Berizin resmi dari Pemerintah</p>
+        </div>
+        <div class="card">
+            <img src="./icon-pendidikan.png" width="30" height="30" />
+            <p>Berizin resmi dari Pemerintah</p>
+        </div>
+        <div class="card">
+            <img src="./icon-pendidikan.png" width="30" height="30" />
+            <p>Berizin resmi dari Pemerintah</p>
+        </div>
+        <div class="card">
+            <img src="./icon-pendidikan.png" width="30" height="30" />
+            <p>Berizin resmi dari Pemerintah</p>
+        </div>
+    </div>
+    <h2>Kategori Terpopuler</h2>
+    <div class="box-container">
+        <div class="card-2">
+            <img src="./icon-pendidikan.png" width="30" height="30" />
+            <p>Persiapan sertifikasi ahli mulai dari K3, ISO, Brevet Pajak, hingga HR untuk profesional.</p>
+        </div>
+        <div class="card-2">
+            <img src="./icon-pendidikan.png" width="30" height="30" />
+            <p>Menguasai metode dan praktik terbaik standar ISO untuk perusahaan.</p>
+        </div>
+        <div class="card-2">
+            <img src="./icon-pendidikan.png" width="30" height="30" />
+            <p>Menguasai dasar-dasar akuntasi hingga perpajakan untuk karyawan perusahaan</p>
+        </div>
+        <div class="card-2">
+            <img src="./icon-pendidikan.png" width="30" height="30" />
+            <p>Menguasai tata kelola dan pengembangan bisnis berbagai skala secara end-to-end.</p>
+        </div>
+    </div>
+    <div class="box-container">
+        <div class="card-2">
+            <img src="./icon-pendidikan.png" width="30" height="30" />
+            <p>Persiapan sertifikasi ahli mulai dari K3, ISO, Brevet Pajak, hingga HR untuk profesional.</p>
+        </div>
+        <div class="card-2">
+            <img src="./icon-pendidikan.png" width="30" height="30" />
+            <p>Menguasai metode dan praktik terbaik standar ISO untuk perusahaan.</p>
+        </div>
+        <div class="card-2">
+            <img src="./icon-pendidikan.png" width="30" height="30" />
+            <p>Menguasai dasar-dasar akuntasi hingga perpajakan untuk karyawan perusahaan</p>
+        </div>
+        <div class="card-2">
+            <img src="./icon-pendidikan.png" width="30" height="30" />
+            <p>Menguasai tata kelola dan pengembangan bisnis berbagai skala secara end-to-end.</p>
+        </div>
+    </div>
+</body>
+</html>

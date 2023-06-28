@@ -1,0 +1,86 @@
+ p{
+    color: #ff0000; 
+    font-size: larger;
+    text-transform: uppercase;
+}
+ .description {
+     color: white;
+     background-color: black;
+ }
+
+ .font-big {
+     font-size: x-large;
+ }
+
+ #desc {
+     color: brown;
+ }
+
+ .text-bold {
+     font-weight: 700;
+ }
+
+ .box-blue {
+     width: 100%;
+     height: 300px;
+    max-height: 350px;
+    min-height: 250px;
+     background-color: #035fab;
+ }
+
+ .container {
+     height: 400px;
+     padding: 2rem;
+     /* background-image: url('./bg-container.ebe0c1e0.webp'); */
+     background-image: url('../icon-pendidikan.png');
+     background-repeat: no-repeat;
+     background-position: center;
+ }
+
+ .card {
+    padding: 20px 20px 20px 20px;
+    margin: 20px;
+    border: 1px solid gray;
+    /* border-left: 1px solid black; */
+    /* border-style: solid;
+        border-width: 1px;
+        border-color: gray; */
+    border-radius: 5px;
+ }
+
+ .box-flower > img {
+    filter: drop-shadow(2px 4px 6px black);
+    width:500px;
+    height:300px;
+ }
+
+ .transisi-box{
+    /* width: 100px;
+    height: 100px;
+    background-image: url('./594870.jpg'); */
+    background-size: cover;
+    animation: animasiKotak 2s ease 3 alternate forwards running;
+    /* transition: width 2s, height 2s, background-image 3s, transform 2s; */
+    /* transition-delay: 2s; */
+ }
+
+ /* .transisi-box:hover{
+    width: 500px;
+    height: 300px;
+    background-image: url('./bg-container.ebe0c1e0.webp');
+    transform: rotate(360deg);
+ } */
+
+ @keyframes animasiKotak {
+    from{
+        width: 100px;
+        height: 100px;
+        background-image: url('./594870.jpg');
+    }
+    to{
+        width: 500px;
+        height: 300px;
+        background-image: url('./bg-container.ebe0c1e0.webp');
+        transform: rotate(360deg);
+    }
+ }

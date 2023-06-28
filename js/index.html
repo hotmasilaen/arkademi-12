@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh JavaScript</title>
+</head>
+<body>
+    <p id="root">Nama: </p>
+    <script>
+        const nama = "farhan";
+        let umur = 23;
+        umur = 24;
+
+        console.log(nama);
+        // alert(nama);
+        document.getElementById("root").innerHTML = 'Nama: ' + nama
+
+        console.log(typeof umur);
+
+        const num1 = 300;
+        const num2 = 301;
+        const hasil = num1 / num2;
+        console.log('Hasil: ' + hasil);
+        // nilainya sama -> B
+        // tipe datanya sama -> S
+        // hasilnya -> S
+        console.log('Identical: ' + num1 === num2);
+
+        console.log(num1 != num2);
+
+        const str1 = 'He said "Goodbye"';
+        console.log(str1.length);
+
+        const str2 = 'Harga barang Rp 10000 dipotong pajak 5%';
+        console.log(str2.slice(16, 21));
+        console.log(str2.replace('10000', '15000'));
+        console.log(str1.toLocaleUpperCase());
+        console.log(str1.toLowerCase());
+
+        const age = 18;
+        if(age == 17){
+            console.log('Umur Anda sudah 17 tahun.');
+        } else if(age > 17){
+            console.log('Umur Anda diatas 17 tahun.');
+        } else{
+            console.log('Umur Anda belum 17 tahun.');
+        }
+
+        const hari = 1;
+        switch (hari) {
+            case 2:
+                console.log('Hari ini hari Senin');
+                break;
+            case 1:
+                console.log('Hari ini hari Selasa');
+                break;
+        
+            default:
+                break;
+        }
+
+        const namaSiswa = [
+            {
+                nama: 'Irvan',
+                alamat: 'Jakarta',
+                noHp: '082376872',
+            }, 
+            'Ahmad', 
+            'Berty', 
+            'Lusi', 
+            'Nia', 
+            'Berto'];
+            
+        console.log(namaSiswa.sort());
+
+        for(var i = 1; i < 5; i++){
+            console.log('Number: ' + i);
+        }
+
+        for (var i = 1; i < namaSiswa.length; i++) {
+            console.log('Number: ' + i);
+        }
+
+        for(var i in namaSiswa){
+            console.log('Nama siswa: ' + namaSiswa[i]);
+        }
+
+        function sum(x, y){
+            console.log(y);
+            let result = x + y;
+            return result;
+        }
+
+        console.log(sum(12345, 879));
+        console.log(sum(678, 100));
+
+        const dataSiswa = {
+            nama: 'Irvan',
+            alamat: 'Jakarta',
+            noHp: '082376872',
+        };
+        console.log(dataSiswa);
+
+        dataSiswa.noHp = '08218979876'
+        delete dataSiswa.alamat
+        console.log(dataSiswa);
+
+    </script>
+</body>
+</html>
